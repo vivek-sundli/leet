@@ -6,7 +6,7 @@ using namespace std;
 
 string defangIPaddr(string address) {
     string solution;
-    int j=0;
+    /*int j=0;
     for(int i=0;address[i]!=NULL;i++){
             if(address[i]=='.'){
                 solution.append("[.]");
@@ -18,8 +18,9 @@ string defangIPaddr(string address) {
                 solution[j]=address[i];
                 j++;
             }
-    }
-    return solution;
+    }*/
+    address.replace(s.begin(), s.end(), ".", "[.]");
+    return address;//solution;
 }
 
 int main()
