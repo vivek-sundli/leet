@@ -1,22 +1,17 @@
-//defang IP addresses
-#include <iostream>
-
+#include <bits/stdc++.h>
+#include<algorithm>
 
 using namespace std;
 
 string defangIPaddr(string address) {
     string solution;
-    int j=0;
     for(int i=0;address[i]!=NULL;i++){
             if(address[i]=='.'){
-                solution.append("[.]");
-                //solution[j+1]=".";
-                //solution[j+2]="]";
-                j+=3;
+                solution += "[.]";
             }
             else{
-                solution[j]=address[i];
-                j++;
+                solution+=address[i];
+
             }
     }
     return solution;
