@@ -1,1 +1,1 @@
-following repo has solutions to questions on online platforms.
+following repo has solutions to begineer->advance lvl questions on LC platform.
