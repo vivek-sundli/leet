@@ -1,16 +1,13 @@
-//twosum
+vector<int> v;
 
-[2,7,11,15] --> 9
-[0,1]
-
-unordered_map[target-i] == found
-make_pair(i,unordered_map[target-i]);
-
-vector<int,int> v;
-v.push_back(make_pair(i,unordered_map[target-i]);
-
-for(int i=0;i<n;i+=){
-	if(){
-		
-	}
+for(int i=0;i<v.size();i++){
+	mp.insert(abs(i-t),i);
 }
+
+if(mp.find(i-t))
+	v.push_back(i);
+	v.push_back(mp[abs[i-t]]);
+	return v;
+return -1;
+
+mp[[vector[abs(i-9)],i]]); 
