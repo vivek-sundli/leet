@@ -1,13 +1,16 @@
-vector<int> v;
-
-for(int i=0;i<v.size();i++){
-	mp.insert(abs(i-t),i);
-}
-
-if(mp.find(i-t))
-	v.push_back(i);
-	v.push_back(mp[abs[i-t]]);
-	return v;
-return -1;
-
-mp[[vector[abs(i-9)],i]]); 
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        vector<int> ans;
+        unordered_map<int,int> mp;
+        for(int i=0;i<nums.size();i++){
+            if(mp.find(target-nums[i])!=mp.end()){
+                ans.push_back(mp[target-nums[i]]);
+                ans.push_back(i);
+                return ans;
+            }
+            mp[nums[i]]=i;
+        }
+        return ans;
+    }
+};
