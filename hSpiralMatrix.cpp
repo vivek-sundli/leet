@@ -15,11 +15,11 @@ public:
             }
             right--;
             
-            for(int i=right ;i>=left ;i++){
+            for(int i=right ;i>=left ;i--){
                 v[bottom][i]=val++;
             }
             bottom--;
-            for(int i=bottom ;i>=top ;i++){
+            for(int i=bottom ;i>=top ;i--){
                 v[i][left]=val++;;
             }
             left++;
