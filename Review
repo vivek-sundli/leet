@@ -1,0 +1,5 @@
+31. Next Permutations
+    *the lexigraphic thing is a lil tricky so solve more questions in relation
+    *have a reverse highest -> swap -> sort after i+1
+    Note:
+    *if the vector is descending. return the reverse. 
